@@ -1,0 +1,19 @@
+# Sorting an array of element using high order function:
+
+arr = [5,3,8,6,2,7,4,1]
+
+#sorting the array in ascending order:
+ascending = sorted(arr,key = lambda x:x)
+print("Ascending order:",ascending)
+
+#sorting the array in descending order:
+descending = sorted(arr,key = lambda x:x,reverse = True)
+print("Descending order:",descending)
+
+#explanations:
+
+#high order function:
+#sorted() takes a function (lambda x: x) as a key, which defines how to sort elements. The original list remains unchanged.
+
+#Lambda function:
+#In this example, lambda x: x returns the element itself, which is used as the basis for sorting.
